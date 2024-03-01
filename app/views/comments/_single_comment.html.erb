@@ -5,7 +5,8 @@
     <%= render 'comments/comment_form',
         :comment => single_comment,
         :commentable => single_comment.commentable,
-        :button_name => ts('Update') %>
+        :preview_button_name => ts('Preview'),
+        :submit_button_name => ts('Update') %>
   <% else %>
     <% if single_comment.is_deleted %>
       <p>

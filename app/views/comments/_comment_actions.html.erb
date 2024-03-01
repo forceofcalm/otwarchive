@@ -70,7 +70,8 @@
       <%= render 'comments/comment_form',
         :comment => Comment.new,
         :commentable => comment,
-        :button_name => ts("Comment") %>
+        :preview_button_name => ts("Comment"),
+        :submit_button_name => ts("Comment") %>
   <% else %>
     <div id="add_comment_reply_placeholder_<%= comment.id %>" style="display: none;">
   <% end %>

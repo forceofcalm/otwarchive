@@ -7,7 +7,8 @@
 <%= render :partial => 'comments/comment_form', :locals => {
     :comment => @comment, 
     :commentable => @commentable,
-    :button_name => ts("Comment")
+    :preview_button_name => ts("Preview")
+    :submit_button_name => ts("Comment"),
   } 
 %>
 <!--/content-->
